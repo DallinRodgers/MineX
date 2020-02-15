@@ -295,7 +295,7 @@ ul li.dot {
   transition: 0.5s;
 }
 
-li:hover {
+li.dot:hover {
   background: #ffe76f;
   box-shadow: 0 0 10px rgba(255, 255, 255, 1), 0 0 20px rgba(255, 255, 255, 1),
     0 0 30px rgba(255, 255, 255, 1), 0 0 0 75px rgba(255, 255, 255, 0.05),
