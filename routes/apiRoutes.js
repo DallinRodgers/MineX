@@ -99,10 +99,10 @@ module.exports = function(app) {
       .then(function(dbPost) {
         if (dbPost !== null) {
           return res.json("Email already exists");
+        } else {
+          cryptThePassword();
         }
       });
-
-    cryptThePassword();
 
     async function cryptThePassword() {
       // Hash password
@@ -125,11 +125,11 @@ module.exports = function(app) {
           funds: req.body.funds
         })
         .then(function(dbPost) {
-        user = dbPost;
-        createMinerals();
+          user = dbPost;
+          createMinerals();
         });
-        function createMinerals(){
-          db.minerals
+      function createMinerals() {
+        db.minerals
           .create({
             uranium: 0,
             neodymium: 0,
@@ -152,20 +152,19 @@ module.exports = function(app) {
             ore = dbPost;
             sendItBack(user, ore);
           });
-        }
+      }
     }
 
-    function sendItBack(userData, oreData){
+    function sendItBack(userData, oreData) {
       var sendThis = {
         user: userData.dataValues,
         ore: oreData.dataValues
-      }
+      };
       res.json(sendThis);
     }
   });
-  app.get('/logout', function(req, res){
+  app.get("/logout", function(req, res) {
     req.logout();
-    res.redirect('/'); 
-  }); 
-  
+    res.redirect("/");
+  });
 };
