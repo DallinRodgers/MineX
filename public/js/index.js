@@ -56,6 +56,7 @@ document.querySelector("#new-submit").addEventListener("click", function(e) {
   var newShipForm = ".new-ship-input";
   var isSet = isFormFilled(newShipForm);
   var doPasswordsMatch = true;
+  var errorMessage = document.querySelector("#errorMessageNew");
 
   // Capture input
   var newShip = {
@@ -70,25 +71,37 @@ document.querySelector("#new-submit").addEventListener("click", function(e) {
   // Make sure passwords match
   if ($("#input-password").val() !== $("#input-password-confirm").val()) {
     doPasswordsMatch = false;
-    alert("The passwords do not match");
+    showError(errorMessage, "The passwords do not match");
     // Make sure all fields are filled and password match
   } else if (isSet && doPasswordsMatch) {
     $.post("/api/new", newShip).then(function(data) {
       // If we get a user id back redirect to game
-      if (data.user.id !== undefined) {
-        window.location.href = "/main/" + data.user.id;
+      if (typeof data === "string") {
+        showError(errorMessage, data);
       } else {
-        // Report why a user was not created
-        alert(data);
+        window.location.href = "/main/" + data.user.id;
       }
     });
   } else {
-    alert("All fields are required");
+    showError(errorMessage, "All fields are required");
   }
 });
 
+function showError(here, what) {
+  here.textContent = what;
+  here.classList.add("d-block");
+  setTimeout(function() {
+    hideError(here);
+  }, 3000);
+}
+
+function hideError(here) {
+  here.classList.remove("d-block");
+}
+
 document.querySelector("#find-submit").addEventListener("click", function(e) {
   e.preventDefault();
+  var errorMessage = document.querySelector("#errorMessageFind");
 
   var newShipForm = ".find-ship-input";
   var isSet = isFormFilled(newShipForm);
@@ -99,19 +112,19 @@ document.querySelector("#find-submit").addEventListener("click", function(e) {
   };
 
   if (isSet) {
-    getUserEmail(findShip.email, findShip.password);
+    getUserEmail(findShip.email, findShip.password, errorMessage);
   } else {
-    alert("All fields are required");
+    showError(errorMessage, "All fields are required");
   }
 });
-function getUserEmail(email, password) {
+function getUserEmail(email, password, ifError) {
   var emailString = email;
   var passwordString = password;
   $.get("/api/find/" + emailString + "/" + passwordString, function(data) {
-    if (data.id !== undefined) {
-      window.location.href = "/main/" + data.id;
+    if (typeof data === "string") {
+      showError(ifError, data);
     } else {
-      alert(data);
+      window.location.href = "/main/" + data.id;
     }
   });
 }
