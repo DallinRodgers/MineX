@@ -185,3 +185,11 @@
   display: flex;
   justify-content: space-between;
 }
+.error-message {
+  position: absolute;
+  bottom: 1rem;
+  left: 4rem;
+  font-size: 2rem;
+  color: $color-primary-1;
+  display: none;
+}

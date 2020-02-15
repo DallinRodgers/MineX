@@ -239,6 +239,14 @@ label {
   display: flex;
   justify-content: space-between; }
 
+.error-message {
+  position: absolute;
+  bottom: 1rem;
+  left: 4rem;
+  font-size: 2rem;
+  color: #19bca0;
+  display: none; }
+
 html {
   font-family: "Nunito", sans-serif; }
 
