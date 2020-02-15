@@ -1,302 +1,304 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .clearfix::after {
-    content: "";
-    clear: both;
-    display: block;
+  content: "";
+  clear: both;
+  display: block;
 }
 
 ._404 {
-    color: #222;
+  color: #222;
 }
 
 .main-container {
-    background-color: rgba(100, 100, 100, 5);
-    margin: 40px auto 0 auto;
-    padding: 20px;
-    width: 900px;
-    min-height: 500px;
-    border-radius: 12px;
+  background-color: rgba(100, 100, 100, 5);
+  margin: 40px auto 0 auto;
+  padding: 20px;
+  width: 900px;
+  min-height: 500px;
+  border-radius: 12px;
 }
 
 .gp-header {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
-.gp-header>img {
-    width: 200px;
+.gp-header > img {
+  width: 200px;
 }
 
 .h-line {
-    height: 2px;
-    background-color: #444;
-    margin: 20px 0 20px 0;
+  height: 2px;
+  background-color: #444;
+  margin: 20px 0 20px 0;
 }
 
 .btn-gp-signout {
-    background-color: #444;
-    text-align: center;
-    font-size: 1.5em;
-    padding: 15px;
-    height: 60px;
+  background-color: #444;
+  text-align: center;
+  font-size: 1.5em;
+  padding: 15px;
+  height: 60px;
 }
 
 .btn-gp-signout:hover {
-    background-color: #3E3A71;
+  background-color: #3e3a71;
 }
 
 .pg-welcome {
-    font-size: 2em;
-    text-align: center;
+  font-size: 2em;
+  text-align: center;
 }
 
 .wire {
-    border: 2px solid darkred;
-    padding: 5px;
-    margin: 5px;
+  border: 2px solid darkred;
+  padding: 5px;
+  margin: 5px;
 }
 
 .dashboard {
-    display: flex;
-    align-items: stretch;
-    font-size: 1.4em;
+  display: flex;
+  align-items: stretch;
+  font-size: 1.4em;
 }
 
 .asteroid-div {
-    width: 100%;
-    background-color: #444;
-    padding: 8px;
+  width: 100%;
+  background-color: #444;
+  padding: 8px;
 }
 
 .asteroid-title {
-    height: 8%;
+  height: 8%;
 }
 
 .asteroids {
-    background-color: #333;
-    height: 80px;
-    width: 100%;
-    box-shadow: inset 0 0 20px #222;
-    border: 1px solid #333;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 30px 0 30px;
+  background-color: #333;
+  height: 80px;
+  width: 100%;
+  box-shadow: inset 0 0 20px #222;
+  border: 1px solid #333;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px 0 30px;
 }
 
 .asteroids > img {
-    display: flex;
-    height: 60px;
+  display: flex;
+  height: 60px;
 }
 
 .rockets {
-    background-color: #444;
-    padding: 8px 0 8px 8px;
-    min-height: 520px;
-    width: 300px;
+  background-color: #444;
+  padding: 8px 0 8px 8px;
+  min-height: 520px;
+  width: 300px;
 }
 
 .rocket-title {
-    height: 8%;
+  height: 8%;
 }
 
 .rocket-options {
-    background-color: #666;
-    height: 92%;
-    box-shadow: inset 0 0 20px #444;
-    border: 1px solid #333;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    padding: 10px 0 10px 0;
+  background-color: #666;
+  height: 92%;
+  box-shadow: inset 0 0 20px #444;
+  border: 1px solid #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 10px 0 10px 0;
 }
 
 .current-option {
-    border-bottom: 4px solid #FFDA1F;
+  border-bottom: 4px solid #ffda1f;
 }
 
 .r-image > img {
-    width: 60px;
-    padding-bottom: 2px;
+  width: 60px;
+  padding-bottom: 2px;
 }
 
 .stats {
-    width: 25%;
-    background-color: #444;
-    display: flex;
+  width: 25%;
+  background-color: #444;
+  display: flex;
 }
 
 .stats-title {
-    background-color: #333;
-    padding: 5px;
-    text-align: center;
+  background-color: #333;
+  padding: 5px;
+  text-align: center;
 }
 
 .stats-details {
-    background-color: #666;
+  background-color: #666;
 }
 
 .actions {
-    float: right;
+  float: right;
 }
 
 .inner {
-    background-color: #666;
-    padding: 8px;
-    margin: 10px 0 0 0;
-    height: 370px;
-    display: flex;
-    justify-content: space-around;
-    border: 1px solid #333;
+  background-color: #666;
+  padding: 8px;
+  margin: 10px 0 0 0;
+  height: 370px;
+  display: flex;
+  justify-content: space-around;
+  border: 1px solid #333;
 }
 
 .inner-dashboard {
-    width: 100%;
-    background-color: #444;
-    display: flex;
+  width: 100%;
+  background-color: #444;
+  display: flex;
 }
 
 .cmd-title {
-    background-color: #333;
-    padding: 5px;
-    text-align: center;
+  background-color: #333;
+  padding: 5px;
+  text-align: center;
 }
 
 .command-center {
-    width: 100%;
+  width: 100%;
 }
 
 .stats-center {
-    width: 100%;
+  width: 100%;
 }
 
 .flex {
-    display: flex;
-    justify-content: space-evenly;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .f-box {
-    height: 320px;
+  height: 320px;
 }
 
 .actions {
-    float: left;
-    background-color: #666;
-    margin: 5px;
-    width: 35%;
+  float: left;
+  background-color: #666;
+  margin: 5px;
+  width: 35%;
 }
 
 .funding {
-    float: left;
-    background-color: #666;
-    margin: 5px;
-    width: 65%;
+  float: left;
+  background-color: #666;
+  margin: 5px;
+  width: 65%;
 }
 
 .current-funds,
 .ores,
 .sell-ores,
 .mine-a {
-    background-color: #444;
-    padding: 5px;
-    margin: 5px;
+  background-color: #444;
+  padding: 5px;
+  margin: 5px;
 }
 
 .sell-ores,
 .mine-a {
-    text-align: center;
-    font-size: 18px;
-    height: 113px;
-    margin: 8px;
-    padding: 40px 0 0 0;
+  text-align: center;
+  font-size: 18px;
+  height: 113px;
+  margin: 8px;
+  padding: 40px 0 0 0;
 }
 
 .mine-a:hover {
-    background-color: #19BCA0;
-    color: #222;
-    font-weight: 700;
+  background-color: #19bca0;
+  color: #222;
+  font-weight: 700;
 }
 
 .sell-ores:hover {
-    background-color: #19BCA0;
-    color: #222;
-    font-weight: 700;
+  background-color: #19bca0;
+  color: #222;
+  font-weight: 700;
 }
 
 .ore-list {
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 }
 
 .ore-list ul {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 .ores {
-    height: 265px;
-    overflow: auto;
+  height: 265px;
+  overflow: auto;
 }
 
 .r-corner {
-    border-radius: 8px;
+  border-radius: 8px;
 }
 
 .rocket-details {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .r-image {
-    display: flex;
+  display: flex;
 }
 
 .r-data {
-    margin-left: 12px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  margin-left: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .buy-btn {
-    margin-top: 3px;
-    padding: 4px;
-    text-align: center;
-    background-color: #444;
+  margin-top: 3px;
+  padding: 4px;
+  text-align: center;
+  background-color: #444;
 }
 
 .buy-btn:hover {
-    background-color: #3E3A71;;
+  background-color: #3e3a71;
 }
 
-ul {
-    display: flex;
-    justify-content: space-around;
-    padding: 5px;
-
+.ore-list-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 5px;
 }
 
-ul li {
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
-    list-style: none;
-    background: #f3efda;
-    color: #000635;
-    transition: .5s;
+.dots {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+ul li.dot {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  list-style: none;
+  background: #f3efda;
+  color: #000635;
+  transition: 0.5s;
 }
 
 li:hover {
-    background: #ffe76f;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 1),
-                0 0 20px rgba(255, 255, 255, 1),
-                0 0 30px rgba(255, 255, 255, 1),
-                0 0 0 75px rgba(255, 255, 255, 0.05),
-                0 0 0 60px rgba(255, 255, 255, 0.05),
-                0 0 0 45px rgba(255, 255, 255, 0.05),
-                0 0 0 30px rgba(255, 255, 255, 0.05),
-                0 0 0 15px rgba(255, 255, 255, 0.05);
+  background: #ffe76f;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 1), 0 0 20px rgba(255, 255, 255, 1),
+    0 0 30px rgba(255, 255, 255, 1), 0 0 0 75px rgba(255, 255, 255, 0.05),
+    0 0 0 60px rgba(255, 255, 255, 0.05), 0 0 0 45px rgba(255, 255, 255, 0.05),
+    0 0 0 30px rgba(255, 255, 255, 0.05), 0 0 0 15px rgba(255, 255, 255, 0.05);
 }
