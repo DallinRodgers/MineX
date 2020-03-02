@@ -5,6 +5,8 @@
 Technology Used
 HTML, SCSS, JavaScript, three.js, Nodejs, Express, bcripty, and Sequelize
 
+View online: https://dallin-rodgers-minex.herokuapp.com/
+
 ## Description
 
 The is an online game for mining in space. On the homepage there are two options. Build a new ship or find your ship. If they choose to build a ship they will be given a form to fill out.
