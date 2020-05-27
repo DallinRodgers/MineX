@@ -15,6 +15,6 @@ The game does shave their progress so if they choose to sign in it will display 
 
 ## My Work
 
-This project was from a group assingment in my Full Stack Bootcamp through the University of Utah. Everthing you see here was my contribution to the assignment except for the game dashboard and imgs. 
+This project was from a group assingment in my Full Stack Bootcamp through the University of Utah. My contribution to the assignment was the login page and login functionality. 
 
-I setup the express handlebars, api and html routes, page styling, password encryption, and sequelize batabase.
+Setup the express handlebars, api and html routes, page styling, password encryption, and sequelize batabase.
