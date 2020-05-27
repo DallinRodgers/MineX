@@ -17,6 +17,6 @@ The game is intended to save their progress so if they choose to sign in it will
 
 ## My Work
 
-This project was from a group assingment in my Full Stack Bootcamp through the University of Utah. My contribution to the assignment was the login page and login functionality. 
+This project was from a group assignment in my Full Stack Bootcamp through the University of Utah. My contribution to the assignment was the login page and login functionality. 
 
 Setup the express handlebars, api and html routes, page styling, password encryption, and sequelize batabase.
